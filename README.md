@@ -265,5 +265,5 @@ Sviluppato da **Consuelo Fasano**
 
 Il codice sorgente del progetto è disponibile alla seguente repository GitHub:
 
-https://github.com/<tuo-username>/gestione_utenti
+https://github.com/ConsuFas/gestione_utenti
 
