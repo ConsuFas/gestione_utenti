@@ -1,0 +1,193 @@
+/* ====== BASE LAYOUT ====== */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2d2d2d;
+}
+
+/* ====== FORM CARD ====== */
+
+form {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    transition: 0.2s;
+    min-width: 160px;
+}
+
+form input:focus {
+    border-color: #5b9df9;
+    outline: none;
+    box-shadow: 0 0 6px rgba(91,157,249,0.3);
+}
+
+form button {
+    padding: 12px 18px;
+    font-size: 14px;
+    background: #5b9df9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #4a89e8;
+}
+
+/* ====== SEARCH BAR ====== */
+
+#search {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d0d0d0;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: 0.2s;
+}
+
+#search:focus {
+    border-color: #5b9df9;
+    outline: none;
+    box-shadow: 0 0 6px rgba(91,157,249,0.3);
+}
+
+/* ====== BOTTONE SHOW ALL ====== */
+
+.btn-show {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-show:hover {
+    background-color: #45a049;
+}
+
+/* ====== NESSUN RISULTATO ====== */
+
+#noResults {
+    display: none;
+    text-align: center;
+    color: #d9534f;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* ====== TABLE ====== */
+
+#usersTable {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+th {
+    background: #eef3fb;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer; /* per sorting */
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover td {
+    background: #f8faff;
+}
+
+/* ====== ACTION BUTTONS ====== */
+
+button.edit,
+button.delete {
+    padding: 7px 11px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+/* Modifica */
+button.edit {
+    background: #5b9df9;
+    color: white;
+}
+
+button.edit:hover {
+    background: #4a89e8;
+}
+
+/* Elimina */
+button.delete {
+    background: #e57373;
+    color: white;
+}
+
+button.delete:hover {
+    background: #d9534f;
+}
+
+/* ====== PAGINATION ====== */
+
+.page-btn {
+    padding: 7px 12px;
+    margin: 8px 4px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.page-btn:hover {
+    background: #ddd;
+}
